@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(98, 128, 169);
+  padding: 15px;
+  color: #fff;
+  /* border: 10px solid #fff; */
+}
+.profile__image > img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  width: 100%;
+  height: 250px;
+}
+.profile__socialMedia {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.profile__socialMedia > a:hover {
+  color: #fff;
+}
+.profile__socialMedia > a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+/* content */
+.content__cv {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* border: 2px solid grey; */
+}
+h3 {
+  color: rgb(98, 128, 169);
+}
+.content__cv__eduction > p {
+  font-size: 20px;
+}
+.content__cv__eduction > h3 {
+  color: #fff;
+  background-color: rgb(98, 128, 169);
+  padding: 7px;
+}
+.content__skill {
+  background-color: rgb(33, 22, 22);
+  width: 30%;
+  margin-right: 10px;
+  padding: 10px;
+  color: rgb(98, 128, 169);
+}
+.form-group > h4 {
+  font-size: 17px;
+}
+.content__cv__eduction {
+  width: 70%;
+}
+/* education */
+.profile__education {
+  display: flex;
+  justify-content: space-between;
+}
+/* qualitie and employement records */
+.employement {
+  /*  */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.employement__qualities {
+  /*  */
+  background-color: rgb(33, 22, 22);
+  width: 30%;
+  margin-right: 10px;
+  padding: 10px;
+  color: rgb(98, 128, 169);
+}
+.employement__content {
+  width: 70%;
+}
+.employement__content > h3 {
+  color: #fff;
+  background-color: rgb(98, 128, 169);
+  padding: 7px;
+}
+.intergrity__qualities {
+  display: flex;
+  align-items: center;
+}
+.intergrity__qualities > h1 {
+  margin-right: 5px;
+}
+/* media query */
+@media only screen and (max-width: 768px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+  }
+  .profile__image>img{
+    text-align: center;
+    margin: auto;
+    height: 150px;
+  }
+  .content__skill{
+    order:-1
+  }
+}
